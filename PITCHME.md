@@ -1,5 +1,5 @@
 ---
-```javascript
+```typescript
 interface IUserFormControls extends IFormControls {
     name: FormControl;
     surname: FormControl;
@@ -14,7 +14,7 @@ export class UserFormComponent extends FormComponent<IUserFormControls> IAfterFo
     @Input() public user: IUser;
     @Output() public onClose = new EventEmitter();
 
-    setFormControls(): IUserForm2Controls {
+    setFormControls(): IUserFormControls {
         return {
             name: new FormControl(),
             surname: new FormControl()
