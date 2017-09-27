@@ -5,16 +5,9 @@ interface IUserFormControls extends IFormControls {
     surname: FormControlTextfield;
     jobTitle: FormControlDropdown;
 }
-@Component({
-    selector: 'user-form',
-    templateUrl: './user-form.component.html',
-    styleUrls: ['./user-form.component.css'],
-    changeDetection: ChangeDetectionStrategy.OnPush
-})
-export class UserFormComponent extends FormComponent<IUserFormControls> implements IAfterFormCreate {
-    @Input() public user: IUser;
-    @Output() public onClose = new EventEmitter();
-
+@Component({ selector: 'user-form', ...})
+export class UserFormComponent extends FormComponent<IUserFormControls> {
+    // @Input() and @Output list goes here
     protected setFormControls(): IUserFormControls {
         return {
             name: new FormControlTextfield({...}),
@@ -22,17 +15,10 @@ export class UserFormComponent extends FormComponent<IUserFormControls> implemen
             jobTitle: new FormControlDropdown({...})
         };
     }
-
-    public afterFormCreate(form: FormGroup): void {
-        form.patchValue(this.user);
-        this.registerForm('user-data-form');
-    }
 }
 ```
 
-@[1-5, 15-20] (Interface z info opisuący kontrolki w formularzu)
-@[1, 15-20] (Interface i implementacja)
-@[15-20] (Implementacja setFormControls)
-@[11] 
-@[9-14]
+@[1-5] (Interface z info opisuący kontrolki w formularzu)
+@[7](Rozszerzamy klasę FormComponent (lub FormArrayComponent))
+@[1-5, 9-14] (Implementacja setFormControls)
 ---
