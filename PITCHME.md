@@ -1,34 +1,38 @@
 ---
 ```typescript
 interface IUserFormControls extends IFormControls {
-    name: FormControl;
-    surname: FormControl;
+    name: FormControlTextfield;
+    surname: FormControlTextfield;
+    jobTitle: FormControlDropdown;
 }
 @Component({
-    selector: 'app-user-form',
+    selector: 'user-form',
     templateUrl: './user-form.component.html',
     styleUrls: ['./user-form.component.css'],
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class UserFormComponent extends FormComponent<IUserFormControls> IAfterFormCreate {
+export class UserFormComponent extends FormComponent<IUserFormControls> implements IAfterFormCreate {
     @Input() public user: IUser;
     @Output() public onClose = new EventEmitter();
 
-    setFormControls(): IUserFormControls {
+    protected setFormControls(): IUserFormControls {
         return {
-            name: new FormControl(),
-            surname: new FormControl()
+            name: new FormControlTextfield({...}),
+            surname: new FormControlTextfield({...}),
+            jobTitle: new FormControlDropdown({...})
         };
     }
 
-    afterFormCreate(form: FormGroup): void {
+    public afterFormCreate(form: FormGroup): void {
         form.patchValue(this.user);
-        this.registerForm('user-single-form');
+        this.registerForm('user-data-form');
     }
 }
 ```
-@[1]
-@[11]
-@[15-20]
+
+@[1-5, 15-20] (Interface z info opisuący kontrolki w formularzu)
+@[1, 15-20] (Interface i implementacja)
+@[15-20] (Implementacja setFormControls)
+@[11] 
 @[9-14]
 ---
