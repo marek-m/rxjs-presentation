@@ -11,10 +11,11 @@
 ## Stan aplikacji
 
 - Jest globalnym obiektem |
-- Przepływ jednokierunkowy |
+- Przepływ danych jasno określony (jednokierunkowy) |
 - Reducery zapisują dane do stanu |
 - Selektory pobierają dane ze stanu |
 
+![state-operations-array] assets/state-modification-array.png
 ---?code=sample/go/server.go&lang=golang&title=Golang File
 
 @[1,3-6](Present code found within any repo source file.)
