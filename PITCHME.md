@@ -1,27 +1,17 @@
-# Sunkist
-
-### A GitPitch Presentation Template
-
+# Redux state management
 ---
 
-## Tips!
-
-<br>
-
-@fa[arrows gp-tip](Press F to go Fullscreen)
-
-@fa[microphone gp-tip](Press S for Speaker Notes)
-
+## Stan aplikacji
+```typescript
+    global.state = {};
+```
 ---
 
-## Template Features
+## Stan aplikacji
 
-- Code Presenting |
-- Repo Source, Static Blocks, GIST |
-- Custom CSS Styling |
-- Slideshow Background Image |
-- Slide-specific Background Images |
-- Custom Logo, TOC, and Footnotes |
+- Jest obiektem |
+- Reducery zapisują dane do stanu |
+- Selektory pobierają dane ze stanu |
 
 ---?code=sample/go/server.go&lang=golang&title=Golang File
 
@@ -35,28 +25,7 @@
 
 <p><span class="slide-title">JavaScript Block</span></p>
 
-```javascript
-// Include http module.
-var http = require("http");
 
-// Create the server. Function passed as parameter
-// is called on every request made.
-http.createServer(function (request, response) {
-  // Attach listener on end event.  This event is
-  // called when client sent, awaiting response.
-  request.on("end", function () {
-    // Write headers to the response.
-    // HTTP 200 status, Content-Type text/plain.
-    response.writeHead(200, {
-      'Content-Type': 'text/plain'
-    });
-    // Send data and end response.
-    response.end('Hello HTTP!');
-  });
-
-// Listen on the 8080 port.
-}).listen(8080);
-```
 
 @[1,2](You can present code inlined within your slide markdown too.)
 @[9-17](Displayed using code-syntax highlighting just like your IDE.)

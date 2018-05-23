@@ -11,4 +11,4 @@ logo : assets/image/logo.png
 highlight : atom-one-dark
 transition : none
 published : true
-footnote : "GitPitch [ Sunkist ] Presentation Template"
+footnote : "Redux state management"
