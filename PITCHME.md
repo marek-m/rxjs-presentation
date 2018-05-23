@@ -1,19 +1,19 @@
-## Redux state management
+---?image=assets/image/first.jpg
+### <span class="white">Redux state management</span>
 ---
 
 ## Stan aplikacji
 ```javascript
-{
     global.state = {};
-}
 ```
 ---
 
 ## Stan aplikacji
 
-- Jest obiektem |
-- [Reducery] zapisują dane do stanu |
-- [Selektory] pobierają dane ze stanu |
+- Jest globalnym obiektem |
+- Przepływ jednokierunkowy |
+- Reducery zapisują dane do stanu |
+- Selektory pobierają dane ze stanu |
 
 ---?code=sample/go/server.go&lang=golang&title=Golang File
 
