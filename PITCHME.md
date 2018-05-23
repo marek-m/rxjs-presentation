@@ -16,7 +16,7 @@
 - Selektory pobierają dane ze stanu |
 
 ---
-![array](assets/image/state-modification-array.png)
+![array](assets/image/state-modification-for-array.png)
 ---
 ---?code=sample/go/server.go&lang=golang&title=Golang File
 
