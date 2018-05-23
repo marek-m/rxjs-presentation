@@ -16,7 +16,7 @@
 - Selektory pobierają dane ze stanu |
 
 --- 
-@title[Operacje na tablicy danych]
+<p><span class="slide-title">Operacje na tablicy</span></p>
 ![operations-for-array](assets/image/state-modification-for-array.png)
 ---
 ---?code=sample/go/server.go&lang=golang&title=Golang File
