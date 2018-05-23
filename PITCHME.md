@@ -14,7 +14,8 @@
 - Przepływ danych jasno określony (jednokierunkowy) |
 - Reducery zapisują dane do stanu |
 - Selektory pobierają dane ze stanu |
-
+---
+![user-nested](assets/image/users-raw-form.png)
 --- 
 <p><span class="slide-title">Operacje na tablicy</span></p>
 ![operations-for-array](assets/image/operations-array.png)
