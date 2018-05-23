@@ -2,8 +2,10 @@
 ---
 
 ## Stan aplikacji
-```typescript
+```javascript
+{
     global.state = {};
+}
 ```
 ---
 
