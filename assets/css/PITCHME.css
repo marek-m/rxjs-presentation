@@ -94,4 +94,7 @@ body {
 .reveal section img {
     border: 0;
     box-shadow: none;
+    background: none;
+    max-height: 90%;
+    max-width: 90%;
 }
