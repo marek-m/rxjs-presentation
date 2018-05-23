@@ -15,15 +15,8 @@
 - Reducery zapisują dane do stanu |
 - Selektory pobierają dane ze stanu |
 
----
-## Operacje na tablicy danych
-- Pobieranie 
-```users.find((el) => el.id === id)``` 
-|
-- Dodawanie 
-```users.push({id: '', ...})``` 
-|
 --- 
+@title[Operacje na tablicy danych]
 ![operations-for-array](assets/image/state-modification-for-array.png)
 ---
 ---?code=sample/go/server.go&lang=golang&title=Golang File
