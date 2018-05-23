@@ -91,3 +91,7 @@ body {
 
 .gp-download { margin-left: 10px; }
 
+.reveal section img {
+    border: 0;
+    box-shadow: none;
+}
