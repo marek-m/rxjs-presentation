@@ -1,4 +1,4 @@
-# Redux state management
+## Redux state management
 ---
 
 ## Stan aplikacji
@@ -12,8 +12,8 @@
 ## Stan aplikacji
 
 - Jest obiektem |
-- Reducery zapisują dane do stanu |
-- Selektory pobierają dane ze stanu |
+- [Reducery] zapisują dane do stanu |
+- [Selektory] pobierają dane ze stanu |
 
 ---?code=sample/go/server.go&lang=golang&title=Golang File
 
