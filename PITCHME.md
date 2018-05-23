@@ -17,8 +17,12 @@
 
 ---
 ## Operacje na tablicy danych
-- Pobieranie ```users.find((el) => el.id === id)``` |
-- Dodawanie ```users.push({id: '', ...})``` |
+- Pobieranie 
+```users.find((el) => el.id === id)``` 
+|
+- Dodawanie 
+```users.push({id: '', ...})``` 
+|
 --- 
 ![operations-for-array](assets/image/state-modification-for-array.png)
 ---
