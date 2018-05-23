@@ -17,7 +17,7 @@
 
 --- 
 <p><span class="slide-title">Operacje na tablicy</span></p>
-![operations-for-array](assets/image/state-modification-for-array.png)
+![operations-for-array](assets/image/operatins-array.png)
 ---
 ---?code=sample/go/server.go&lang=golang&title=Golang File
 
