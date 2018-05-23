@@ -17,6 +17,8 @@
 ---
 ![user-nested](assets/image/users-nested.png)
 --- 
+![users-normalized](assets/image/users-normalized.png)
+---
 <p><span class="slide-title">Operacje na tablicy</span></p>
 ![operations-for-array](assets/image/operations-array.png)
 ---
