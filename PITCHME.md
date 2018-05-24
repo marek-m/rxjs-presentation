@@ -61,7 +61,7 @@ AGENDA
 - Zwiększanie zużycia pamięci |
 - Zduplikowane dane === problemy z modyfikacją |
 - Przykład: musimy pamiętać i aktualizować wszystkie miejsca duplikacji na raz...
-
+---
 ## Zagnieżdzone dane -> problemy:
 - Nadmiarowe odświeżanie widoków | 
 - Niepotrzebna złożoność struktura |
