@@ -81,7 +81,7 @@
 <p><span class="slide-title">Stan znormalizowany</span></p>
 ![company-normalized](assets/image/company-employees-normalized.png)
 ---
-<p><span class="slide-title">Normalizr</span></p>
+<p><span class="slide-title">@Normalizr</span></p>
 
 ```
 //INPUT
@@ -154,4 +154,29 @@ const normalizedData = normalize(originalData, article);
 ![operations-for-map](assets/image/operations-for-map.png)
 ---
 ![ngrx-entity](assets/image/ngrx-entity.png)
+---
+## ADAPTER
+Udostępnia metody do zarządzania pojedynczą koleckcją (tablcą) danych określonego typu.
+---
+## W PRAKTYCE
+- addOne, addMany, updateOne, deleteOne, deleteAll itd... |
+- Automatyczni generuje podstawowe selektory |
+- Generuje strukture indeksowaną z podanej tablicy |
+- Możemy od razu pobrać 'initialState' |
+---
+## Jak to działa
+---
+## (1) Model danych
+```typescript
+interface Book {
+  id: string;
+  title: string;
+}
+```
+---
+## (2) Adapter
+```typescript
+import { createEntityAdapter } from '@ngrx/entity';
+const bookAdapter = createEntityAdapter<Book>();
+```
 ---
