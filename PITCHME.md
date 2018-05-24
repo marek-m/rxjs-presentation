@@ -62,6 +62,8 @@ AGENDA
 - Zduplikowane dane === problemy z modyfikacją |
 - Przykład: musimy pamiętać i aktualizować wszystkie miejsca duplikacji na raz... |
 ---
+![user-nested](assets/image/users-nested.png)
+---
 ## Zagnieżdzone dane
 - Nadmiarowe odświeżanie widoków | 
 - Niepotrzebna złożoność struktura |
@@ -69,12 +71,16 @@ AGENDA
 ---
 ![company-nested](assets/image/company-employees-nested.png)
 ---
-## <p><span class="slide-title">Stan znormalizowany</span></p>
+<p><span class="slide-title">Stan znormalizowany</span></p>
 ![company-normalized](assets/image/company-employees-normalized.png)
 ---
 <p><span class="slide-title">Operacje na tablicy</span></p>
 ![operations-for-array](assets/image/operations-array.png)
 ---
+<p><span class="slide-title">Operacje na indeksowanym zbiorze</span></p>
+![operations-for-map](assets/image/operations-map.png)
+---
+
 ---?code=sample/go/server.go&lang=golang&title=Golang File
 
 @[1,3-6](Present code found within any repo source file.)
