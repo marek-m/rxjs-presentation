@@ -36,7 +36,7 @@ AGENDA
 - 1 postać normalna | 
 - 2 posać normalna | 
 - 3 postać normalna |
-- 4, 5, 6 (tylko w rozważaniach teoretycznych) |
+- 4, 5 (tylko w rozważaniach teoretycznych) |
 ---
 ## 1 postać normalna
 (OPIS + PRZYKŁAD)
@@ -54,12 +54,21 @@ AGENDA
 ![users-normalized](assets/image/users-normalized.png)
 ---
 ## Dlaczego znormalizowane
-- Pozbywamy się duplikatów |
-- Zduplikowane dane === problemy z modyfikacją |
-- Nadmarowe odświeżanie widoków | 
-- Niepotrzeba złożona struktura |
+- Pozbywamy się duplikatów! |
+- Pozbywamy się zagnieżdżonych struktur! |
 ---
+## Zduplikowane dane -> problemy: 
+- Zwiększanie zużycia pamięci |
+- Zduplikowane dane === problemy z modyfikacją |
+- Przykład: musimy pamiętać i aktualizować wszystkie miejsca duplikacji na raz...
 
+## Zagnieżdzone dane -> problemy:
+- Nadmiarowe odświeżanie widoków | 
+- Niepotrzebna złożoność struktura |
+- Zniszczenie aktualnego stanu (immutability, predictability) |
+---
+![company-nested](assets/image/company-employees-nested.png)
+---
 <p><span class="slide-title">Operacje na tablicy</span></p>
 ![operations-for-array](assets/image/operations-array.png)
 ---
