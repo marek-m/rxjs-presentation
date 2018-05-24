@@ -60,7 +60,7 @@ AGENDA
 ## Zduplikowane dane 
 - Zwiększanie zużycia pamięci |
 - Zduplikowane dane === problemy z modyfikacją |
-- Przykład: musimy pamiętać i aktualizować wszystkie miejsca duplikacji na raz...
+- Przykład: musimy pamiętać i aktualizować wszystkie miejsca duplikacji na raz... |
 ---
 ## Zagnieżdzone dane
 - Nadmiarowe odświeżanie widoków | 
