@@ -78,7 +78,7 @@ AGENDA
 ![operations-for-array](assets/image/operations-array.png)
 ---
 <p><span class="slide-title">Operacje na indeksowanym zbiorze</span></p>
-![operations-for-map](assets/image/operations-map.png)
+![operations-for-map](assets/image/operations-for-map.png)
 ---
 ![ngrx-entity](assets/image/ngrx-entity.png)
 ---
