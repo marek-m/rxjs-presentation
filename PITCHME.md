@@ -25,16 +25,41 @@ AGENDA
 - Zachowanie aplikacji: Stan załadowania danych - loading/loaded, Wybrany element |
 ---
 (OBRAZEK) ZAŁADOWANE DANE I PRZYKŁADOWY STAN (NESTED OBJECTS, NOT CATEGORIZED)
+---
 ## Uporządkowanie stanu
 - Grupowanie danych tego samego rodzaju |
 - Ustanowienie relacji pomiędzy nimi |
 - Usunięcie duplikacji |
 - Normalizacja |
 ---
+## Postać znormalizowana
+- 1 postać normalna | 
+- 2 posać normalna | 
+- 3 postać normalna |
+- 4, 5, 6 (tylko w rozważaniach teoretycznych) |
+---
+## 1 postać normalna
+(OPIS + PRZYKŁAD)
+---
+## 2 postać normalna
+(OPIS + PRZYKŁAD)
+---
+## 3 postać normalna
+(OPIS + PRZYKŁAD)
+---
+### Praktyczne zastosowanie ma postać 2
+---
 ![user-nested](assets/image/users-nested.png)
 --- 
 ![users-normalized](assets/image/users-normalized.png)
 ---
+## Dlaczego znormalizowane
+- Pozbywamy się duplikatów |
+- Zduplikowane dane === problemy z modyfikacją |
+- Nadmarowe odświeżanie widoków | 
+- Niepotrzeba złożona struktura |
+---
+
 <p><span class="slide-title">Operacje na tablicy</span></p>
 ![operations-for-array](assets/image/operations-array.png)
 ---
