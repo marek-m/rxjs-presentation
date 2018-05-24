@@ -238,3 +238,6 @@ export const {
 } = bookAdapter.getSelectors();
 ```
 ---
+## Pytania
+![kermit](assets/image/questions.png)
+---
