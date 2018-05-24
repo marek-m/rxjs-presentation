@@ -200,7 +200,7 @@ interface EntityState<V> {
 ---
 ```typescript
 const initialState: BookState = bookAdapter.getInitialState();
-export function bookReducer(
+export function reducer(
   state: BookState = initialState,
   action: BookActions,
 ): BookState {
@@ -226,4 +226,15 @@ export function bookReducer(
 @[9-13](Modyfikacja encji o podanym id.)
 @[14-15](Usunięcie jednego elementu.)
 @[16-17](Zapis całej kolekcji.)
+---
+## 5. Selectors
+Ostatnią rzeczą jaką musimy zrobić jest pobranie selektorów
+```typescript
+export const {
+  selectIds,
+  selectEntities,
+  selectAll,
+  selectTotal,
+} = bookAdapter.getSelectors();
+```
 ---
