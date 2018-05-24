@@ -66,7 +66,7 @@ AGENDA
 ---
 ## Zagnieżdzone dane
 - Nadmiarowe odświeżanie widoków | 
-- Niepotrzebna złożoność struktura |
+- Niepotrzebna złożoność |
 - Zniszczenie aktualnego stanu (immutability, predictability) |
 ---
 ![company-nested](assets/image/company-employees-nested.png)
@@ -79,6 +79,8 @@ AGENDA
 ---
 <p><span class="slide-title">Operacje na indeksowanym zbiorze</span></p>
 ![operations-for-map](assets/image/operations-map.png)
+---
+![ngrx-entity](assets/image/ngrx-entity.png)
 ---
 
 ---?code=sample/go/server.go&lang=golang&title=Golang File
