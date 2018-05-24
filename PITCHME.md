@@ -69,6 +69,9 @@ AGENDA
 ---
 ![company-nested](assets/image/company-employees-nested.png)
 ---
+## <p><span class="slide-title">Stan znormalizowany</span></p>
+![company-normalized](assets/image/company-employees-normalized.png)
+---
 <p><span class="slide-title">Operacje na tablicy</span></p>
 ![operations-for-array](assets/image/operations-array.png)
 ---
