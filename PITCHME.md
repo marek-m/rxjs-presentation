@@ -166,7 +166,7 @@ Udostępnia metody do zarządzania pojedynczą koleckcją (tablcą) danych okre�
 ---
 ## Jak to działa
 ---
-## 1. Model danych
+## Model danych
 ```typescript
 interface Book {
   id: string;
@@ -174,7 +174,7 @@ interface Book {
 }
 ```
 ---
-## 2. Adapter
+## 1. Adapter
 Pierwszym krokiem jest utworznie adaptera dla modelu danych.
 
 ```typescript
@@ -182,7 +182,7 @@ import { createEntityAdapter } from '@ngrx/entity';
 const bookAdapter = createEntityAdapter<Book>();
 ```
 ---
-## 3. Interface extends EntityState
+## 2. Interface extends EntityState
 Musimy zdeklarować interfejs.
 ```typescript
 import { EntityState } from '@ngrx/entity';
@@ -195,4 +195,35 @@ interface EntityState<V> {
   entities: { [id: string]: V };
 }
 ```
+---
+## 4. Reducer
+---
+```typescript
+const initialState: BookState = bookAdapter.getInitialState();
+export function bookReducer(
+  state: BookState = initialState,
+  action: BookActions,
+): BookState {
+  switch (action.type) {
+    case BookActionTypes.ADD_ONE:
+      return bookAdapter.addOne(action.book, state);
+    case BookActionTypes.UPDATE_ONE:
+      return bookAdapter.updateOne({
+        id: action.id,
+        changes: action.changes,
+      }, state);
+    case BookActionTypes.DELETE_ONE:
+      return bookAdapter.deleteOne(action.id, state);
+    case BookActionTypes.GET_ALL:
+      return bookAdapter.addAll(action.books, state);
+    default:
+      return state;
+  }
+}
+```
+@[1](initialState pobieramy z adaptera)
+@[7-8](Operacja dodania jednej encji.)
+@[9-13](Modyfikacja encji o podanym id.)
+@[14-15](Usunięcie jednego elementu.)
+@[16-17](Zapis całej kolekcji.)
 ---
