@@ -166,7 +166,7 @@ Udostępnia metody do zarządzania pojedynczą koleckcją (tablcą) danych okre�
 ---
 ## Jak to działa
 ---
-## (1) Model danych
+## 1. Model danych
 ```typescript
 interface Book {
   id: string;
@@ -174,9 +174,25 @@ interface Book {
 }
 ```
 ---
-## (2) Adapter
+## 2. Adapter
+Pierwszym krokiem jest utworznie adaptera dla modelu danych.
+
 ```typescript
 import { createEntityAdapter } from '@ngrx/entity';
 const bookAdapter = createEntityAdapter<Book>();
+```
+---
+## 3. Interface extends EntityState
+Musimy zdeklarować interfejs.
+```typescript
+import { EntityState } from '@ngrx/entity';
+export interface BookState extends EntityState<Book> { }
+```
+Który pod spodem wygląda tak:
+```typescript
+interface EntityState<V> {
+  ids: string[];
+  entities: { [id: string]: V };
+}
 ```
 ---
