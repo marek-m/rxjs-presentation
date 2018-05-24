@@ -16,7 +16,7 @@ AGENDA
 - Reducery zapisują dane do stanu |
 - Selektory pobierają dane ze stanu |
 ---
-(OBRAZEK) PRZEPŁYW DANYCH W STORZE
+![redux-data-flow](assets/image/redux-data-flow.png)
 --- 
 ## Typy danych
 - Backend API |
