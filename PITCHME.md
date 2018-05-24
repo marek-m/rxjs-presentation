@@ -156,10 +156,10 @@ const normalizedData = normalize(originalData, article);
 ![ngrx-entity](assets/image/ngrx-entity.png)
 ---
 ## ADAPTER
-Udostępnia metody do zarządzania pojedynczą koleckcją (tablcą) danych określonego typu.
+Udostępnia metody do zarządzania pojedynczą koleckcją (tablicą) danych określonego typu.
 ---
 ## W PRAKTYCE
-- addOne, addMany, updateOne, deleteOne, deleteAll itd... |
+- addOne, addMany, updateOne, deleteOne, deleteAll |
 - Automatyczni generuje podstawowe selektory |
 - Generuje strukture indeksowaną z podanej tablicy |
 - Możemy od razu pobrać 'initialState' |
@@ -231,10 +231,10 @@ export function reducer(
 Ostatnią rzeczą jaką musimy zrobić jest pobranie selektorów
 ```typescript
 export const {
-  selectIds,
-  selectEntities,
-  selectAll,
-  selectTotal,
+  selectIds: getBookIds,
+  selectEntities: getBooks,
+  selectAll: getAllBooks,
+  selectTotal: getBooksTotal,
 } = bookAdapter.getSelectors();
 ```
 ---
