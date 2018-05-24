@@ -7,13 +7,29 @@
     global.state = {};
 ```
 ---
-
+AGENDA
+---
 ## Stan aplikacji
 
 - Jest globalnym obiektem |
 - Przepływ danych jasno określony (jednokierunkowy) |
 - Reducery zapisują dane do stanu |
 - Selektory pobierają dane ze stanu |
+---
+(OBRAZEK) PRZEPŁYW DANYCH W STORZE
+--- 
+## Typy danych
+- Backend API |
+- Dane aplikacji |
+- Przykład: Informacje o wybranej zakładce, informacje o danych routingu, paginacji | 
+- Zachowanie aplikacji: Stan załadowania danych - loading/loaded, Wybrany element |
+---
+(OBRAZEK) ZAŁADOWANE DANE I PRZYKŁADOWY STAN (NESTED OBJECTS, NOT CATEGORIZED)
+## Uporządkowanie stanu
+- Grupowanie danych tego samego rodzaju |
+- Ustanowienie relacji pomiędzy nimi |
+- Usunięcie duplikacji |
+- Normalizacja |
 ---
 ![user-nested](assets/image/users-nested.png)
 --- 
