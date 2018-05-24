@@ -57,12 +57,12 @@ AGENDA
 - Pozbywamy się duplikatów! |
 - Pozbywamy się zagnieżdżonych struktur! |
 ---
-## Zduplikowane dane === problemy: 
+## Zduplikowane dane 
 - Zwiększanie zużycia pamięci |
 - Zduplikowane dane === problemy z modyfikacją |
 - Przykład: musimy pamiętać i aktualizować wszystkie miejsca duplikacji na raz...
 ---
-## Zagnieżdzone dane === problemy:
+## Zagnieżdzone dane
 - Nadmiarowe odświeżanie widoków | 
 - Niepotrzebna złożoność struktura |
 - Zniszczenie aktualnego stanu (immutability, predictability) |
