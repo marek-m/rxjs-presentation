@@ -60,7 +60,7 @@ AGENDA
 ## Zduplikowane dane 
 - Zwiększanie zużycia pamięci |
 - Zduplikowane dane === problemy z modyfikacją |
-- Przykład: musimy pamiętać i aktualizować wszystkie miejsca duplikacji na raz... |
+- Musimy pamiętać o aktualizacji wszystkich miejsca duplikacji na raz... |
 ---
 ![user-nested](assets/image/users-nested.png)
 ---
@@ -71,8 +71,76 @@ AGENDA
 ---
 ![company-nested](assets/image/company-employees-nested.png)
 ---
+![company-example](assets/image/company-example.png)
+---
 <p><span class="slide-title">Stan znormalizowany</span></p>
 ![company-normalized](assets/image/company-employees-normalized.png)
+---
+<p><span class="slide-title">Normalizr</span></p>
+
+```
+//INPUT
+{
+  "id": "123",
+  "author": {
+    "id": "1",
+    "name": "Paul"
+  },
+  "title": "My awesome blog post",
+  "comments": [
+    {
+      "id": "324",
+      "commenter": {
+        "id": "2",
+        "name": "Nicole"
+      }
+    }
+  ]
+}
+// SCHEMAS
+import { normalize, schema } from 'normalizr';
+
+// Define a users schema
+const user = new schema.Entity('users');
+
+// Define your comments schema
+const comment = new schema.Entity('comments', {
+  commenter: user
+});
+
+// Define your article
+const article = new schema.Entity('articles', {
+  author: user,
+  comments: [comment]
+});
+
+const normalizedData = normalize(originalData, article);
+
+//OUTPUT
+{
+  result: "123",
+  entities: {
+    "articles": {
+      "123": {
+        id: "123",
+        author: "1",
+        title: "My awesome blog post",
+        comments: [ "324" ]
+      }
+    },
+    "users": {
+      "1": { "id": "1", "name": "Paul" },
+      "2": { "id": "2", "name": "Nicole" }
+    },
+    "comments": {
+      "324": { id: "324", "commenter": "2" }
+    }
+  }
+}
+```
+@[1-19](Przed normalizacją.)
+@[20-38](Definiowanie schematów.)
+@[39-58](Wynik normalizacji.)
 ---
 <p><span class="slide-title">Operacje na tablicy</span></p>
 ![operations-for-array](assets/image/operations-array.png)
