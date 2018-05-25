@@ -215,6 +215,18 @@ interface EntityState<V> {
 }
 ```
 ---
+```typescript
+{
+    ids: ['d123', 'e123', 'f123', ...],
+    entities: {
+        'd123': {id: 'd123', title: 'book1'},
+        'e123': {id: 'e123', title: 'book2'},
+        'f123': {id: 'f123', title: 'book3'},
+        ...
+    }
+}
+```
+---
 ## 4. Reducer
 ---
 ```typescript
