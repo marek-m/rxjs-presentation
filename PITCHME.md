@@ -239,5 +239,5 @@ export const {
 ```
 ---
 ## Pytania
-![kermit-questions](assets/image/questions.png)
+![kermit-questions](assets/image/questions2.png)
 ---
