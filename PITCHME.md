@@ -269,5 +269,13 @@ export const {
 } = bookAdapter.getSelectors();
 ```
 ---
+## Podsumowując
+- Uporządkowana struktura (indeksowane typy) |
+- Redukowanie duplikacji i zagnieżdżeń |
+- Dane w postaci znormalizowanej |
+- @ngrx-entity oszczędza czas |
+---
+## [Redux structuring reducers] @fa[external-link gp-download]](https://redux.js.org/recipes/structuring-reducers)
+---
 ## Pytania
 ![kermit-questions](assets/image/questions2.png)
