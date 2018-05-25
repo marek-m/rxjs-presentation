@@ -73,6 +73,7 @@
 - Nadmiarowe odświeżanie widoków | 
 - Niepotrzebna złożoność |
 - Zniszczenie aktualnego stanu (immutability, predictability) |
+- Jak ułożyć reducery?? |
 ---
 ![company-nested](assets/image/company-employees-nested.png)
 ---
