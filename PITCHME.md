@@ -61,6 +61,7 @@
 ---
 ## Postać znormalizowana
 Jest to zespół restrykcji/reguł które porządkują model danych .
+---
 - 3 postacie normalne (1,2,3NF) gdzie 3 forma najbardziej restrykcyjna | 
 - 1NF w każdej kolumnie przechowujemy tylko dane prymitywne (atomowe) |
 - 2NF każda dana w kolumnie polega na kluczu głównym (co przekłada się na brak powtarzających się wierszy) |
