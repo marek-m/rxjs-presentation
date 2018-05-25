@@ -29,7 +29,29 @@
 - Przykład: Informacje o wybranej zakładce, informacje o danych routingu, paginacji | 
 - Zachowanie aplikacji: Stan załadowania danych - loading/loaded, Wybrany element |
 ---
-(OBRAZEK) ZAŁADOWANE DANE I PRZYKŁADOWY STAN (NESTED OBJECTS, NOT CATEGORIZED)
+```
+{
+  loading: true,
+  entities: [
+    articles: [
+      {
+        id: "123",
+        author: {...},
+        comments: [ ... ]
+      }
+    ],
+  ],
+  uiState: {
+    selectedRouting: {
+        path: '/.../.../'
+    },
+    selectedTab: 1,
+    visibleViews: [{name: ...}]
+  },
+  entities2: [...],
+  otherEntities: [...]
+}
+```
 ---
 ## Uporządkowanie stanu
 - Grupowanie danych tego samego rodzaju |
@@ -241,4 +263,3 @@ export const {
 ---
 ## Pytania
 ![kermit-questions](assets/image/questions2.png)
----
