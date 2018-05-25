@@ -60,21 +60,16 @@
 - Normalizacja |
 ---
 ## Postać znormalizowana
-- 1 postać normalna | 
-- 2 posać normalna | 
-- 3 postać normalna |
-- 4, 5 (tylko w rozważaniach teoretycznych) |
+Jest to zespół restrykcji/reguł które porządkują model danych .
+- 3 postacie normalne (1,2,3NF) gdzie 3 forma najbardziej restrykcyjna | 
+- 1NF w każdej kolumnie przechowujemy tylko dane prymitywne (atomowe) |
+- 2NF każda dana w kolumnie polega na kluczu głównym (co przekłada się na brak powtarzających się wierszy) |
+- 3NF w kolumnach właściwie tylko same klucze... |
+- Jeżeli dane są w 2NF to są i w 1NF, jeżeli w 3NF to w 2NF i 1NF... |
 ---
-## 1 postać normalna
-(OPIS + PRZYKŁAD)
----
-## 2 postać normalna
-(OPIS + PRZYKŁAD)
----
-## 3 postać normalna
-(OPIS + PRZYKŁAD)
----
-### Praktyczne zastosowanie ma postać 2
+### Praktyczne zastosowanie ma postać 2 :)
+- Spłaszczamy każdy obiekt, jeżeli posiada jakies zagnieżdzone elementy to wyrzucamy je do innego zbioru |
+- Dane wiążemy za pomocą kluczy głównych |
 ---
 ![user-nested](assets/image/users-nested.png)
 --- 
