@@ -107,3 +107,7 @@ body {
     max-height: 90%;
     max-width: 90%;
 }
+
+.half {
+    width: 50%;
+}

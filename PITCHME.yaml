@@ -10,4 +10,4 @@ theme-override : assets/css/PITCHME.css
 highlight : atom-one-dark
 transition : slide
 published : true
-footnote : "Redux state management"
+footnote : "RxJS - pipe"
