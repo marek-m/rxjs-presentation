@@ -5,12 +5,20 @@
  * https://github.com/gitpitch/gitpitch/wiki/Slideshow-Custom-CSS
  */
 
+/*:root {*/
+    /*--p1: #F8B195;*/
+    /*--p2: #F67280;*/
+    /*--p3: #C06C84;*/
+    /*--p4: #6C5B7B;*/
+    /*--p5: #355C7D;*/
+/*}*/
+
 :root {
-    --p1: #F8B195;
-    --p2: #F67280;
-    --p3: #C06C84;
-    --p4: #6C5B7B;
-    --p5: #355C7D;
+    --p1: #ED254E;
+    --p2: #E4D6A7;
+    --p3: #58A4B0;
+    --p4: #373F51;
+    --p5: #1B1B1E;
 }
 
 body {
