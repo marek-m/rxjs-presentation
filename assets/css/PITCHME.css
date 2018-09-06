@@ -25,9 +25,9 @@ body {
   /* fallback for old browsers */
   background: var(--p5);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(var(--p5), var(--p4), var(--p1));
+  background: -webkit-linear-gradient(var(--p5), var(--p4), var(--p4));
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(var(--p5), var(--p4), var(--p1));
+  background: linear-gradient(var(--p5), var(--p4), var(--p4));
 }
 
 .reveal pre {
