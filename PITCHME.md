@@ -65,13 +65,8 @@ of(1).pipe(
 @snap[west left-30]
 ![Image](./assets/image/throw-one.gif)
 @snapend
-@snap[east right-70]
-```typescript
-of(1).pipe(
-  map(() => this.createNewBall()),
-  switchMap((element: Vue) => animation$),
-)
-```
+@snap[east right-60]
+![Image](./assets/image/ready-anim.png)
 @snapend
 ---
 ## [Redux structuring reducers @fa[external-link gp-download]](https://redux.js.org/recipes/structuring-reducers)
