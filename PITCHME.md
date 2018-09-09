@@ -32,10 +32,12 @@ Chcemy pokazać zachowanie się operatorów wyższego rzędu poprzez wizualizacj
 Po wybraniu operacji dynamicznie tworzymy nowy element HTML i wykonujemy animację spadającej piłki. Zachowanie rzucenia (wcisnięcia przycisku)
 sterowane jest za pomocą operatorów switchMap, concatMap, mergeMap i exhaustMap.
 ---
-@snap[west half half-text2]
+@snap[west half]
+<span style="font-size: 0.8em">
 Chcemy pokazać zachowanie się operatorów wyższego rzędu poprzez wizualizację rzucenia piłki.
 Po wybraniu operacji dynamicznie tworzymy <span class="orange">nowy element HTML</span> i wykonujemy <span class="orange">animację spadającej piłki</span>. Zachowanie rzucenia (wcisnięcia przycisku)
 sterowane jest za pomocą operatorów <span class="orange">switchMap, concatMap, mergeMap i exhaustMap</span>.
+</span>
 @snapend
 @snap[east half]
 ![Image](./assets/image/ball-example.png)
