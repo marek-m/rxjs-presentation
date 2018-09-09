@@ -53,16 +53,26 @@ of(1).pipe(
     )
   }),
 ).subscribe((params) => {
-  params.element.$el.style.top = `${parameters.value}px`;
+  params.element.$el.style.top = `${params.value}px`;
 });
 ```
 @[2-3](Tworzymy element HTML i dodajemy do kontenera)
 @[4](Zaczynamy emitować wartość wewnętrzną)
 @[5-9](Animacja wartości 0, 1, 2, 3)
-@[9](Kończymy Observable po określonej ilości kroków)
-@[12-14](Subskrybujemy się i podmieniamy style.top)
+@[8](Kończymy Observable po określonej ilości kroków)
+@[11-13](Subskrybujemy się i podmieniamy style.top)
 ---
-
+@snap[west left-30]
+![Image](./assets/image/throw-one.fig)
+@snapend
+@snap[east right-70]
+```typescript
+of(1).pipe(
+  map(() => this.createNewBall()),
+  switchMap((element: Vue) => animation$),
+)
+```
+@snapend
 ## [Redux structuring reducers @fa[external-link gp-download]](https://redux.js.org/recipes/structuring-reducers)
 ---
 ## Pytania

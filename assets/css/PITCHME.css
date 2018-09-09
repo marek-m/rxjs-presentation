@@ -94,6 +94,14 @@ body {
   color: white;
 }
 
+.orange {
+  color: orangered;
+}
+
+.half-text {
+    font-size: 0.7em;
+}
+
 .gp-tip { font-size : 1.5em; }
 
 .gp-contact { font-size : 1.4em; }
