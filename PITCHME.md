@@ -63,7 +63,7 @@ of(1).pipe(
 @[11-13](Subskrybujemy się i podmieniamy style.top)
 ---
 @snap[west left-30]
-![Image](./assets/image/throw-one.fig)
+![Image](./assets/image/throw-one.gif)
 @snapend
 @snap[east right-70]
 ```typescript
