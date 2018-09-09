@@ -73,6 +73,7 @@ of(1).pipe(
 )
 ```
 @snapend
+---
 ## [Redux structuring reducers @fa[external-link gp-download]](https://redux.js.org/recipes/structuring-reducers)
 ---
 ## Pytania
