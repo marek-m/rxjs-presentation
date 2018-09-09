@@ -29,8 +29,8 @@
 ---
 ## Przykład II
 Chcemy pokazać zachowanie się operatorów wyższego rzędu poprzez wizualizację rzucenia piłki.
-Po wybraniu operacji dynamicznie tworzymy nowy element HTML i wykonujemy animację spadającej piłki. Zachowanie rzucenia (wcisnięcia przycisku)
-sterowane jest za pomocą operatorów switchMap, concatMap, mergeMap i exhaustMap.
+Po wybraniu operacji dynamicznie <span class="orange">tworzymy nowy element HTML</span> i <span class="orange">wykonujemy animację spadającej piłki</span>. Zachowanie rzucenia (wcisnięcia przycisku)
+sterowane jest za pomocą operatorów <span clss="orange">switchMap, concatMap, mergeMap i exhaustMap</span>.
 ---
 @snap[west half]
 ![Image](./assets/image/simple-mapping.png)
