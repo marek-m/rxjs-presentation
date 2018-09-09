@@ -101,7 +101,9 @@ body {
 .half-text {
     font-size: 0.7em;
 }
-
+.half-text2 {
+    font-size: 0.5em;
+}
 .gp-tip { font-size : 1.5em; }
 
 .gp-contact { font-size : 1.4em; }
