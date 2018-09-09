@@ -27,6 +27,11 @@
 ---
 +++ Imperatywne vs Deklaratywne
 ---
+## Przykład II
+Chcemy pokazać zachowanie się operatorów wyższego rzędu poprzez wizualizację rzucenia piłki.
+Po wybraniu operacji dynamicznie tworzymy nowy element HTML i wykonujemy animację spadającej piłki. Zachowanie rzucenia (wcisnięcia przycisku)
+sterowane jest za pomocą operatorów switchMap, concatMap, mergeMap i exhaustMap.
+---
 @snap[west half]
 ![Image](./assets/image/simple-mapping.png)
 @snapend
@@ -76,7 +81,7 @@ of(1).pipe(
 ## Parametryzowany operator
 ![Image](./assets/image/create-and-animate.png)
 ---
-## [Operatory RxJS]](https://rxjs-operators.firebaseapp.com)
+## [Operatory RxJS](https://rxjs-operators.firebaseapp.com)
 ---
 ## Pytania
 ![kermit-questions](assets/image/questions2.png)
