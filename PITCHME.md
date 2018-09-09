@@ -37,11 +37,19 @@ Chcemy pokazać zachowanie się operatorów wyższego rzędu poprzez wizualizacj
 Po wybraniu operacji dynamicznie tworzymy <span class="orange">nowy element HTML</span> i wykonujemy <span class="orange">animację spadającej piłki</span>. Zachowanie rzucenia (wcisnięcia przycisku)
 sterowane jest za pomocą operatorów <span class="orange">switchMap, concatMap, mergeMap i exhaustMap</span>.
 ---
-@snap[west half]
-![Image](./assets/image/simple-mapping.png)
+@snap[west half half-text]
+Funkcja <span class="orange">interval</span> emituje w *nieskończoność* kolejne
+liczby naturalne co określony czas w ms (parametr).
 @snapend
 @snap[east half]
-![Image](./assets/image/map-steps.png)
+![Image](./assets/image/just-interval.png)
+@snapend
+---
+@snap[west half]
+![Image](./assets/image/just-interval.png)
+@snapend
+@snap[east half]
+![Image](./assets/image/just-interval.gif)
 @snapend
 ---
 @snap[west left-70]
