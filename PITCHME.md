@@ -69,7 +69,14 @@ of(1).pipe(
 ![Image](./assets/image/ready-anim.png)
 @snapend
 ---
-## [Redux structuring reducers @fa[external-link gp-download]](https://redux.js.org/recipes/structuring-reducers)
+![Image](./assets/image/filter-out.png)
+---
+![Image](./assets/image/filter-out-highlight.png)
+---
+## Parametryzowany operator
+![Image](./assets/image/create-and-animate.png)
+---
+## [Operatory RxJS]](https://rxjs-operators.firebaseapp.com)
 ---
 ## Pytania
 ![kermit-questions](assets/image/questions2.png)
