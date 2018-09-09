@@ -33,10 +33,15 @@ Po wybraniu operacji dynamicznie tworzymy nowy element HTML i wykonujemy animacj
 sterowane jest za pomocą operatorów switchMap, concatMap, mergeMap i exhaustMap.
 ---
 ## Przykład II
+@snap[west half half-text]
 Chcemy pokazać zachowanie się operatorów wyższego rzędu poprzez wizualizację rzucenia piłki.
 Po wybraniu operacji dynamicznie tworzymy <span class="orange">nowy element HTML</span> i wykonujemy <span class="orange">animację spadającej piłki</span>. Zachowanie rzucenia (wcisnięcia przycisku)
 sterowane jest za pomocą operatorów <span class="orange">switchMap, concatMap, mergeMap i exhaustMap</span>.
----
+@snapend
+@snap[east half]
+![Image](./assets/image/ball-example.png)
+@snapend
+--------
 @snap[west half half-text]
 Funkcja <span class="orange">interval</span> emituje w *nieskończoność* kolejne
 liczby naturalne co określony czas w ms (parametr).
