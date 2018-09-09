@@ -93,6 +93,14 @@ of(1).pipe(
 ![Image](./assets/image/ready-anim.png)
 @snapend
 ---
+## Dostarczenie danych
+@snap[west left-30]
+![Image](./assets/image/throw-ball-code.png)
+@snapend
+@snap[east right-60]
+![Image](./assets/image/throw-ball-fun.gif)
+@snapend
+---
 ![Image](./assets/image/filter-out.png)
 ---
 ![Image](./assets/image/filter-out-highlight.png)
