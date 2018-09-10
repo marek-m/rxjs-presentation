@@ -147,6 +147,7 @@ Nie interesuje nas dostarczenie danych:
 ![Image](./assets/image/swap.gif)
 @snapend
 ---
+## How to CSS
 ![Image](./assets/image/css-transition-search.gif)
 ---
 ![Image](./assets/image/transition-raw-code.png)
