@@ -180,7 +180,7 @@ Nie interesuje nas dostarczenie danych:
 ```
 @[1](Ustawiamy czas animacji)
 @[2](Przyjmujemy dane ze strumienia)
-@[5](Wykonujemy animację)
+@[5](Wykonujemy nasze swapTransition)
 @[6](Mapujemy na [a, b])
 @[7](Opóźniamy wykonanie następnego o czas animacji)
 @[11-16](Teraz naprawdę podmieniamy dwa elementy ze sobą)
