@@ -135,7 +135,7 @@ tak, żeby osoba oglądająca mogła zobaczyć zasadę działania.
 W podejściu deklaratywnym skupiamy się na celu
 jakim jest
 @ul[](false)
-- animacja zamiany dwóch elementów
+- <span class="orange">animacja zamiany dwóch elementów</span>
 - opóźnieniem wykonania
 @ulend
 Nie interesuje nas dostarczenie danych:
