@@ -156,8 +156,11 @@ Nie interesuje nas dostarczenie danych:
 ![Image](./assets/image/transition-function.png)
 @snapend
 @snap[east left-30]
+<span style="font-size: 0.6em; line-height: normal">
 <span class="orange">value</span> to tablica z dwoma indeksami do zamiany,
 <span class="orange">time</span> to czas animacji.
+</span>
+---
 @snapend
 --------
 ## Pytania
