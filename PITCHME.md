@@ -147,9 +147,9 @@ Nie interesuje nas dostarczenie danych:
 ![Image](./assets/image/swap.gif)
 @snapend
 ---
-![Image](./assets/image/transition-raw-code.gif)
+![Image](./assets/image/transition-raw-code.png)
 ---
-![Image](./assets/image/transition-function.gif)
+![Image](./assets/image/transition-function.png)
 ---
 ## Pytania
 ![kermit-questions](assets/image/questions2.png)
