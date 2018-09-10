@@ -187,7 +187,12 @@ Nie interesuje nas dostarczenie danych:
 @[3](concatMap przyjmuje wartości w sekwencji czekając na wykonanie poprzedniej)
 ---
 #### Dostarczenie danych do Observable swaps$
+@snap[east right-70]
 ![Image](./assets/image/sort-output.png)
+@snapend
+@snap[west left-30]
+![Image](./assets/image/bubblesort.png)
+@snapend
 ---
 ## Pytania
 ![kermit-questions](assets/image/questions2.png)
