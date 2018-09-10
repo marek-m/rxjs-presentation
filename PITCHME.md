@@ -155,12 +155,12 @@ Nie interesuje nas dostarczenie danych:
 @snap[west right-70]
 ![Image](./assets/image/transition-function.png)
 @snapend
-@snap[east left-30]
-<p style="font-size: 0.6em; line-height: 85%; padding: 20px">
-    <span class="orange">value</span> to tablica [a, b] z dwoma indeksami do zamiany,
-    <span class="orange">time</span> to czas animacji.
-</p>
+@snap[east left-30 half-text]
+<span class="orange">value</span> to tablica [a, b] z dwoma indeksami do zamiany,
+<span class="orange">time</span> to czas animacji.
 @snapend
+---
+##Hello
 ---
 ## Pytania
 ![kermit-questions](assets/image/questions2.png)

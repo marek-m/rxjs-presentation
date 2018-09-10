@@ -99,7 +99,9 @@ body {
 }
 
 .half-text {
-    font-size: 0.7em;
+    font-size: 0.6em !important;
+    line-height: 85% !important;
+    padding: 20px !important;
 }
 
 .gp-tip { font-size : 1.5em; }
