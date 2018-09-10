@@ -186,7 +186,9 @@ Nie interesuje nas dostarczenie danych:
 @[11-16](Teraz naprawdę podmieniamy dwa elementy ze sobą)
 @[3](concatMap przyjmuje wartości w sekwencji czekając na wykonanie poprzedniej)
 ---
-#### Dostarczenie danych do Observable swaps$
+@snap[north]
+Dostarczenie danych do Observable swaps$
+@snapend
 @snap[east right-70]
 ![Image](./assets/image/sort-output.png)
 @snapend
