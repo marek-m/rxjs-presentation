@@ -186,7 +186,8 @@ Nie interesuje nas dostarczenie danych:
 @[11-16](Teraz naprawdę podmieniamy dwa elementy ze sobą)
 @[3](concatMap przyjmuje wartości w sekwencji czekając na wykonanie poprzedniej)
 ---
-##Hello
+#### Dostarczenie danych do Observable swaps$
+![Image](./assets/image/sort-output.png)
 ---
 ## Pytania
 ![kermit-questions](assets/image/questions2.png)
