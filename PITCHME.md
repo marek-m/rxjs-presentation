@@ -152,7 +152,7 @@ Nie interesuje nas dostarczenie danych:
 ---
 ![Image](./assets/image/transition-raw-code.png)
 ---
-@snap[west right-60]
+@snap[west right-70]
 ![Image](./assets/image/transition-function.png)
 @snapend
 @snap[east left-20 half-text]
