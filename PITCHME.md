@@ -189,10 +189,10 @@ Nie interesuje nas dostarczenie danych:
 @snap[north]
 Dostarczenie danych do Observable swaps$
 @snapend
-@snap[east right-60]
+@snap[east right-50]
 ![Image](./assets/image/sort-output.png)
 @snapend
-@snap[west left-40]
+@snap[west left-50]
 ![Image](./assets/image/bubblesort.png)
 @snapend
 ---
