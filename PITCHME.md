@@ -196,5 +196,8 @@ Dostarczenie danych do Observable swaps$
 ![Image](./assets/image/bubblesort.png)
 @snapend
 ---
+## [quicksort](https://quicksort-vis.firebaseapp.com)
+## [bubblesort](https://sorting-f413d.firebaseapp.com)
+---
 ## Pytania
 ![kermit-questions](assets/image/questions2.png)
