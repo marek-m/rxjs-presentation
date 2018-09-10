@@ -126,17 +126,17 @@ tak, żeby osoba oglądająca mogła zobaczyć zasadę działania.
 ## Podejście imperatywne
 - Wykonujemy algorytm sortowania |
 - Podczas działania algorytmu: |
-- Dopóki tablica nieposortowana --> |
-- Zamieniamy ze sobą dwa elementu |
+- Dopóki tablica nieposortowana --> |1
+- Zamieniamy ze sobą dwa elementy |
 - Uruchamiamy animację zamiany (setInterval, clearInterval) |
 - Opóźniamy wykonanie następnego kroku |
 ---
 @snap[west left-60]
 W podejściu deklaratywnym skupiamy się na celu
-jakim jest
+jakim jest:
 @ul[](false)
 - <span class="orange">animacja zamiany dwóch elementów</span>
-- opóźnieniem wykonania
+- opóźnienie wykonania
 @ulend
 Nie interesuje nas dostarczenie danych:
 @ul[](false)
@@ -146,6 +146,10 @@ Nie interesuje nas dostarczenie danych:
 @snap[east right-40]
 ![Image](./assets/image/swap.gif)
 @snapend
+---
+![Image](./assets/image/transition-raw-code.gif)
+---
+![Image](./assets/image/transition-function.gif)
 ---
 ## Pytania
 ![kermit-questions](assets/image/questions2.png)
