@@ -155,7 +155,7 @@ Nie interesuje nas dostarczenie danych:
 @snap[west right-60]
 ![Image](./assets/image/transition-function.png)
 @snapend
-@snap[east left-30 half-text]
+@snap[east left-25 half-text]
 <span class="orange">value</span> to tablica [a, b] z dwoma indeksami do zamiany,
 <span class="orange">time</span> to czas animacji.
 @snapend
