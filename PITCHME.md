@@ -126,7 +126,7 @@ tak, żeby osoba oglądająca mogła zobaczyć zasadę działania.
 ## Podejście imperatywne
 - Wykonujemy algorytm sortowania |
 - Podczas działania algorytmu: |
-- Dopóki tablica nieposortowana --> |1
+- Dopóki tablica nieposortowana --> |
 - Zamieniamy ze sobą dwa elementy |
 - Uruchamiamy animację zamiany (setInterval, clearInterval) |
 - Opóźniamy wykonanie następnego kroku |
@@ -155,7 +155,7 @@ Nie interesuje nas dostarczenie danych:
 @snap[west right-60]
 ![Image](./assets/image/transition-function.png)
 @snapend
-@snap[east left-25 half-text]
+@snap[east left-20 half-text]
 <span class="orange">value</span> to tablica [a, b] z dwoma indeksami do zamiany,
 <span class="orange">time</span> to czas animacji.
 @snapend
