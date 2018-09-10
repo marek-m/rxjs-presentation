@@ -123,5 +123,29 @@ tak, żeby osoba oglądająca mogła zobaczyć zasadę działania.
 ![Image](./assets/image/unsorted.png)
 @snapend
 ---
+## Podejście imperatywne
+- Wykonujemy algorytm sortowania |
+- Podczas działania algorytmu: |
+- Dopóki tablica nieposortowana --> |
+- Zamieniamy ze sobą dwa elementu |
+- Uruchamiamy animację zamiany (setInterval, clearInterval) |
+- Opóźniamy wykonanie następnego kroku |
+---
+@snap[west left-60]
+W podejściu deklaratywnym skupiamy się na celu
+jakim jest
+@ul[](false)
+- animacja zamiany dwóch elementów
+- opóźnieniem wykonania
+@ulend
+Nie interesuje nas dostarczenie danych:
+@ul[](false)
+- kolejne kroki algorytmu
+@ulend
+@snapend
+@snap[east right-40]
+![Image](./assets/image/swap.gif)
+@snapend
+---
 ## Pytania
 ![kermit-questions](assets/image/questions2.png)
