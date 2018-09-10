@@ -160,6 +160,32 @@ Nie interesuje nas dostarczenie danych:
 <span class="orange">time</span> to czas animacji.
 @snapend
 ---
+```typescript
+    const SWAP_TIME = 5;
+    this.swaps$.pipe(
+        concatMap((value) => {
+            return of(value).pipe(
+                tap(swapTransition(value, SWAP_TIME)),
+                mapTo(value),
+                delay(SWAP_TIME * 1000)
+            );
+        }),
+        takeUntile(this.end$)
+    ).subscribe((value) => {
+        const [a, b] = value;
+        const temp = this.bars[a];
+        this.bars[a] = this.bars[b]
+        this.bars[b] = this.bars[a];
+    });
+```
+@[1](Ustawiamy czas animacji)
+@[2](Przyjmujemy dane ze strumienia)
+@[5](Wykonujemy animację)
+@[6](Mapujemy na [a, b])
+@[7](Opóźniamy wykonanie następnego o czas animacji)
+@[11-16](Teraz naprawdę podmieniamy dwa elementy ze sobą)
+@[3](concatMap przyjmuje wartości w sekwencji czekając na wykonanie poprzedniej)
+---
 ##Hello
 ---
 ## Pytania
