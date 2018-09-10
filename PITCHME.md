@@ -27,7 +27,7 @@
 ---
 +++ Imperatywne vs Deklaratywne
 ---
-## Przykład II
+## Przykład
 Chcemy pokazać zachowanie się operatorów wyższego rzędu poprzez wizualizację rzucenia piłki.
 Po wybraniu operacji dynamicznie tworzymy nowy element HTML i wykonujemy animację spadającej piłki. Zachowanie rzucenia (wcisnięcia przycisku)
 sterowane jest za pomocą operatorów switchMap, concatMap, mergeMap i exhaustMap.
@@ -108,6 +108,20 @@ of(1).pipe(
 ![Image](./assets/image/create-and-animate.png)
 ---
 ## [Operatory RxJS](https://rxjs-operators.firebaseapp.com)
+---
+## Przykład: Wizualizacja sortowania elementów
+---
+@snap[west left-60]
+<span style="font-size: 0.8em; line-height: normal">
+Chcemy przedstawić działanie algorytmów sortujących. Dla wybranego
+algorytmu przedstawiamy <span class="orange">sekwencję</span> wykonywanych kroków jaką są
+<span class="orange">zamiany dwóch elementów ze sobą</span> w odpowidniej kolejności. Chcemy <span class="orange">opóźnić kolejne kroki</span>
+tak, żeby osoba oglądająca mogła zobaczyć zasadę działania.
+</span>
+@snapend
+@snap[east right-40]
+![Image](./assets/image/unsorted.png)
+@snapend
 ---
 ## Pytania
 ![kermit-questions](assets/image/questions2.png)
