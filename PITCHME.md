@@ -147,12 +147,18 @@ Nie interesuje nas dostarczenie danych:
 ![Image](./assets/image/swap.gif)
 @snapend
 ---
-## How to CSS
+## How to CSS? :(
 ![Image](./assets/image/css-transition-search.gif)
 ---
 ![Image](./assets/image/transition-raw-code.png)
 ---
+@snap[west right-70]
 ![Image](./assets/image/transition-function.png)
----
+@snapend
+@snap[east left-30]
+<span class="orange">value</span> to tablica z dwoma indeksami do zamiany,
+<span class="orange">time</span> to czas animacji.
+@snapend
+--------
 ## Pytania
 ![kermit-questions](assets/image/questions2.png)
