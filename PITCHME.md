@@ -13,8 +13,39 @@
 - Patchowanie operatorów |
 - Importy |
 ---
-Wywoływanie kolejnych operatorów po kropce:
-
+### Wywoływanie kolejnych operatorów po kropce:
+```typesctipt
+stream$
+    .filter(value => ...)
+    .debounceTime()
+    .map(value => ...)
+    .takeUntile(...)
+```
+---
+### Patchowanie Observable.prototype:
+- Observable.prototype zawiera same deklaracje |
+- każdy import to doklejanie ciała funkcji do Observable.prototype |
+- ...co może powodować problemy |
+---
+```typescript
+import {Observable} from 'rxjs';
+```
+Importujemy całą bibliotekę!!
+(~ 1 MB, ~300kB po kompilacji)
+---
+![Image](./assets/image/observable-prototype.png)
+---
+### Brak importu:
+```
+Error 'takeUntil is not a function'
+```
+---
+### Hint:
+![Image](./assets/image/import-operator-5.4.png)
+---
+### Rozwiązanie:
+![Image](./assets/image/one-file-to-rule-them-all.png)
+---
 ## Dlaczego używać pipe zamiast '.'?
 ---
 ## Migracja RxJS v5.x => v6
