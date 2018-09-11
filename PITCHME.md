@@ -69,9 +69,22 @@ interval(200).pipe(
 ).subscribe(value => console.log(value));
 ```
 ---
+#### v5.5 === v5.4 + pipe
+```
+import { from } from 'rxjs/observable/from';
+import { of } from 'rxjs/observable/of';
+import 'rxjs/add/observable/from';
+import 'rxjs/add/observable/of';
+import { Observable } from 'rxjs/Observable';
+
+Observable.of(...);
+of(...);
+Observable.from([...]);
+```
+---
 ### Importy w v6 (pipe)
 ```
-import { interval, of } from 'rxjs';
+import { Observable, Subject, pipe, interval, of } from 'rxjs';
 import { filter, mergeMap } from 'rxjs/operators';
 
 interval(200).pipe(
@@ -81,14 +94,55 @@ interval(200).pipe(
 ```
 ---
 ## Migracja RxJS v5.x => v6
-- Zmiana nazw operatorów |
-- Operator pipe |
-- rxjs-compat
 ---
-## Import paths
+### Zmiana nazw operatorów
+Powód: zarezerwowane słowa
 ```
-
+    do -> tap
+    catch -> catchError
+    switch -> switchAll
+    finally -> finalize
 ```
+---
+#### Chaining vs Pipe
+```
+source
+ .map(x => x + x)
+ .mergeMap(n => of(n + 1, n + 2)
+   .filter(x => x % 1 == 0)
+   .scan((acc, x) => acc + x, 0)
+ )
+ .catch(err => of('error found'))
+ .subscribe(printResult);
+```
+---
+```
+source.pipe(
+ map(x => x + x),
+ mergeMap(n => of(n + 1, n + 2).pipe(
+   filter(x => x % 1 == 0),
+   scan((acc, x) => acc + x, 0),
+ )),
+ catchError(err => of('error found')),
+).subscribe(printResult);
+```
+---
+#### Deklarowanie własnych operatorów
+```
+const pow => (power: number) =>
+	(source$: Observable<number>) =>
+		source$.pipe(map(n => n ** p));
+```
+---
+#### ...i użycie operatora
+```
+source$.pipe(
+    filter(x => x > 100),
+    pow(3),
+).subscribe(x => console.log(x));
+```
+---
+## Programowanie: imperatywne vs deklaratywne
 ---
 ## Do czego RxJS?
 - Łączenie ze sobą zdarzeń HTML (onclick, onkeyup, ...) |
@@ -96,8 +150,6 @@ interval(200).pipe(
 - Sterowanie asynchronicznymi wywołaniami |
 - Ograniczenie wysyłania zdarzeń po stronie klienta (debounce, throttle) |
 - Przetwarzanie danych w strumieniu async |
----
-### Programowanie: imperatywne vs deklaratywne
 ---
 #### Podejście imperatywne
 Wykonujemy sekwencję działań. Wprowadzamy <span class="orange">ciąg komend zmieniających stan</span> aplikacji w celu osiągnięcia pożądanego rezultatu.
