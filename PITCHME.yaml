@@ -8,6 +8,6 @@ theme : black
 theme-override : assets/css/PITCHME.css
 # theme-override : assets/css/PITCHME.codemax.css
 highlight : atom-one-dark
-transition : slide
+transition : fade
 published : true
 footnote : "RxJS - pipe"
