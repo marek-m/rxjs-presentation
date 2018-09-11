@@ -84,7 +84,8 @@ Observable.from([...]);
 ---
 ### Importy w v6 (pipe)
 ```
-import { Observable, Subject, pipe, interval, of } from 'rxjs';
+import { Observable, Subject, pipe, interval, of }
+    from 'rxjs';
 import { filter, mergeMap } from 'rxjs/operators';
 
 interval(200).pipe(
