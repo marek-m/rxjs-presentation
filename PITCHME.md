@@ -25,7 +25,20 @@
 
 ```
 ---
-+++ Imperatywne vs Deklaratywne
+### Imperatywne vs Deklaratywne
+---
+@snap[west left-50 half-text]
+Chcemy przedstawić działanie algorytmów sortujących. Dla wybranego
+algorytmu przedstawiamy <span class="orange">sekwencję</span> wykonywanych kroków jaką są
+<span class="orange">zamiany dwóch elementów ze sobą</span> w odpowidniej kolejności. Chcemy <span class="orange">opóźnić kolejne kroki</span>
+tak, żeby osoba oglądająca mogła zobaczyć zasadę działania.
+@snapend
+@snap[east right-50 half-text]
+Chcemy przedstawić działanie algorytmów sortujących. Dla wybranego
+algorytmu przedstawiamy <span class="orange">sekwencję</span> wykonywanych kroków jaką są
+<span class="orange">zamiany dwóch elementów ze sobą</span> w odpowidniej kolejności. Chcemy <span class="orange">opóźnić kolejne kroki</span>
+tak, żeby osoba oglądająca mogła zobaczyć zasadę działania.
+@snapend
 ---
 ## Przykład
 Chcemy pokazać zachowanie się operatorów wyższego rzędu poprzez wizualizację rzucenia piłki.
