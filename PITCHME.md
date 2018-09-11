@@ -25,14 +25,30 @@
 
 ```
 ---
+## Do czego RxJS?
+- Łączenie ze sobą zdarzeń HTML (onclick, onkeyup, ...) |
+- Dodawanie opóźnienia |
+- Sterowanie asynchronicznymi wywołaniami |
+- Ograniczenie wysyłania zdarzeń po stronie klienta (debounce, throttle) |
+---
 ### Programowanie: imperatywne vs deklaratywne
 ---
 #### Podejście imperatywne
 Wykonujemy sekwencję działań. Wprowadzamy <span class="orange">ciąg komend zmieniających stan</span> aplikacji w celu osiągnięcia pożądanego rezultatu.
 ---
 ### Podejście dekaratywne
-Opisujemy rezultat działania naszego programu. <span class="orange">*Warunki jakie musi spełnić końcowe rozwiązanie (cel)</span> a nie szczegółową sekwencję kroków
+Opisujemy rezultat działania naszego programu. <span class="orange">*Warunki jakie musi spełnić końcowe rozwiązanie (cel)</span> a nie szczegółową sekwencję
 kroków które do niego prowadzą*.
+---
+### Deklaratywnie
+- Zapytanie SQL opisujące wynik wykonania |
+- Utworzenie komponentu HTML i wprowadzenie modelu danych |
+- Wyrażenie regularne |
+---
+### Przykład: drag & drop
+Dla każdego wcisnięcia przycisku myszy <span class="orange">(onmousedown)</span>
+chcemy zacząć nasłuchiwać na przesunięcia <span class="orange">(onmousemove)</span> dopóki
+przycisk myszy nie zostanie puszczony <span class="orange">(onmouseup)</span>.
 ---
 ## Przykład
 Chcemy pokazać zachowanie się operatorów wyższego rzędu poprzez wizualizację rzucenia piłki.
