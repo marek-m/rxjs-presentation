@@ -11,9 +11,12 @@
 ## RxJS <= 5.4
 - Dot chaining |
 - Patchowanie operatorów |
-- Tworzenie operatorów |
 - Importy |
+---
+Wywoływanie kolejnych operatorów po kropce:
 
+## Dlaczego używać pipe zamiast '.'?
+---
 ## Migracja RxJS v5.x => v6
 - Import paths
 - Zmiana nazw operatorów |
@@ -30,7 +33,7 @@
 - Dodawanie opóźnienia |
 - Sterowanie asynchronicznymi wywołaniami |
 - Ograniczenie wysyłania zdarzeń po stronie klienta (debounce, throttle) |
-- Animacje (obliczanie kolejnych korków w animacji) |
+- Przetwarzanie danych w strumieniu async |
 ---
 ### Programowanie: imperatywne vs deklaratywne
 ---
