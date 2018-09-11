@@ -13,8 +13,8 @@
 - Patchowanie operatorów |
 - Importy |
 ---
-### Wywoływanie kolejnych operatorów po kropce:
-```typesctipt
+#### Wywoływanie kolejnych operatorów po kropce:
+```
 stream$
     .filter(value => ...)
     .debounceTime()
@@ -22,9 +22,10 @@ stream$
     .takeUntile(...)
 ```
 ---
-### Patchowanie Observable.prototype:
+#### Patchowanie Observable.prototype:
 - Observable.prototype zawiera same deklaracje |
 - każdy import to doklejanie ciała funkcji do Observable.prototype |
+- ...globalnie! |
 - ...co może powodować problemy |
 ---
 ```typescript
@@ -35,21 +36,51 @@ Importujemy całą bibliotekę!!
 ---
 ![Image](./assets/image/observable-prototype.png)
 ---
-### Brak importu:
+#### Brak importu:
 ```
 Error 'takeUntil is not a function'
 ```
 ---
-### Hint:
+#### Hint:
 ![Image](./assets/image/import-operator-5.4.png)
 ---
-### Rozwiązanie:
+#### Rozwiązanie:
 ![Image](./assets/image/one-file-to-rule-them-all.png)
 ---
-## Dlaczego używać pipe zamiast '.'?
+### Importy w v5.4 (patch)
+```
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/observable/of';
+import 'rxjs/add/observable/interval';
+import 'rxjs/add/operator/filter';
+import 'rxjs/add/operator/switchMap';
+```
+---
+### Importy w v5.5 (pipe)
+```
+import { interval } from 'rxjs/observable/interval';
+import { of } from 'rxjs/observable/of';
+import { filter } from 'rxjs/operators/filter';
+import { switchMap } from 'rxjs/operators/switchMap';
+
+interval(200).pipe(
+    filter(...),
+    switchMap(...)
+).subscribe(value => console.log(value));
+```
+---
+### Importy w v6 (pipe)
+```
+import { interval, of } from 'rxjs';
+import { filter, mergeMap } from 'rxjs/operators';
+
+interval(200).pipe(
+    filter(...),
+    mergeMap(...)
+).subscribe(value => console.log(value));
+```
 ---
 ## Migracja RxJS v5.x => v6
-- Import paths
 - Zmiana nazw operatorów |
 - Operator pipe |
 - rxjs-compat
