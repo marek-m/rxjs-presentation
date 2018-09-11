@@ -50,6 +50,27 @@ Dla każdego wcisnięcia przycisku myszy <span class="orange">(onmousedown)</spa
 chcemy zacząć nasłuchiwać na przesunięcia <span class="orange">(onmousemove)</span> dopóki
 przycisk myszy nie zostanie puszczony <span class="orange">(onmouseup)</span>.
 ---
+@snap[west right-70]
+![Image](./assets/image/drag-and-drop-events.png)
+@snapend
+@snap[east left-20 half-text]
+Zbieramy nasze zdarzenia z dokumentu za pomocą operatora <span class="orange">fromEvent</span>.
+@snapend
+---
+@snap[west right-70]
+![Image](./assets/image/drag-and-drop-inner.png)
+@snapend
+@snap[east left-20 half-text]
+Nasłuchujemy na przesunięcia <span class="orange">mouseMove$</span> dopóki nie puścimy przycisku myszy <span class="orange">mouseUp$</span>.
+---
+@snap[west right-70]
+![Image](./assets/image/drag-and-drop.png)
+@snapend
+@snap[east left-20 half-text]
+Na każde zdarzenie <span class="orange">mouseDown$</span> zaczynamy emitować wartości z <span class="orange">mouseMove$</span>.
+---
+### [d&d](https://codepen.io/marek-m/pen/JOWzXb?editors=1011)
+---
 ## Przykład
 Chcemy pokazać zachowanie się operatorów wyższego rzędu poprzez wizualizację rzucenia piłki.
 Po wybraniu operacji dynamicznie tworzymy nowy element HTML i wykonujemy animację spadającej piłki. Zachowanie rzucenia (wcisnięcia przycisku)
