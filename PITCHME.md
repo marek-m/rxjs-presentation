@@ -25,26 +25,14 @@
 
 ```
 ---
-### Imperatywne vs Deklaratywne
+### Programowanie: imperatywne vs deklaratywne
 ---
-@snap[north-west half-text]
-Podejście imperatywne
-@snapend
-@snap[west left-40 half-text]
-Chcemy przedstawić działanie algorytmów sortujących. Dla wybranego
-algorytmu przedstawiamy <span class="orange">sekwencję</span> wykonywanych kroków jaką są
-<span class="orange">zamiany dwóch elementów ze sobą</span> w odpowidniej kolejności. Chcemy <span class="orange">opóźnić kolejne kroki</span>
-tak, żeby osoba oglądająca mogła zobaczyć zasadę działania.
-@snapend
-@snap[north-east half-text]
-Podejście deklaratywne
-@snapend
-@snap[east right-40 half-text]
-Chcemy przedstawić działanie algorytmów sortujących. Dla wybranego
-algorytmu przedstawiamy <span class="orange">sekwencję</span> wykonywanych kroków jaką są
-<span class="orange">zamiany dwóch elementów ze sobą</span> w odpowidniej kolejności. Chcemy <span class="orange">opóźnić kolejne kroki</span>
-tak, żeby osoba oglądająca mogła zobaczyć zasadę działania.
-@snapend
+#### Podejście imperatywne
+Wykonujemy sekwencję działań. Wprowadzamy <span class="orange">ciąg komend zmieniających stan</span> aplikacji w celu osiągnięcia pożądanego rezultatu.
+---
+### Podejście dekaratywne
+Opisujemy rezultat działania naszego programu. <span class="orange">*Warunki jakie musi spełnić końcowe rozwiązanie (cel)</span> a nie szczegółową sekwencję kroków
+kroków które do niego prowadzą*.
 ---
 ## Przykład
 Chcemy pokazać zachowanie się operatorów wyższego rzędu poprzez wizualizację rzucenia piłki.
