@@ -30,7 +30,7 @@
 @snap[north-west half-text]
 Podejście imperatywne
 @snapend
-@snap[west left-50 half-text]
+@snap[west left-40 half-text]
 Chcemy przedstawić działanie algorytmów sortujących. Dla wybranego
 algorytmu przedstawiamy <span class="orange">sekwencję</span> wykonywanych kroków jaką są
 <span class="orange">zamiany dwóch elementów ze sobą</span> w odpowidniej kolejności. Chcemy <span class="orange">opóźnić kolejne kroki</span>
@@ -39,7 +39,7 @@ tak, żeby osoba oglądająca mogła zobaczyć zasadę działania.
 @snap[north-east half-text]
 Podejście deklaratywne
 @snapend
-@snap[east right-50 half-text]
+@snap[east right-40 half-text]
 Chcemy przedstawić działanie algorytmów sortujących. Dla wybranego
 algorytmu przedstawiamy <span class="orange">sekwencję</span> wykonywanych kroków jaką są
 <span class="orange">zamiany dwóch elementów ze sobą</span> w odpowidniej kolejności. Chcemy <span class="orange">opóźnić kolejne kroki</span>
