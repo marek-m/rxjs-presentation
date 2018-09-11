@@ -30,6 +30,7 @@
 - Dodawanie opóźnienia |
 - Sterowanie asynchronicznymi wywołaniami |
 - Ograniczenie wysyłania zdarzeń po stronie klienta (debounce, throttle) |
+- Animacje (obliczanie kolejnych korków w animacji) |
 ---
 ### Programowanie: imperatywne vs deklaratywne
 ---
@@ -243,5 +244,15 @@ Dostarczenie danych do Observable swaps$
 ## [quicksort](https://quicksort-vis.firebaseapp.com)
 ## [bubblesort](https://sorting-f413d.firebaseapp.com)
 ---
-## Pytania
-![kermit-questions](assets/image/questions2.png)
+## Podsumowując (migracja)
+- Migrując kod do wersji 6 pamiętamy o zmianie nazw niektórych funkcji |
+- oraz usunięciu importów całej biblioteki. |
+- pipe pozwala importować tylko te funkcje które chcemy wykorzystać |
+- definiowanie własnych operatorów w prosty sposób |
+---
+## Podsumowując (deklaratywne)
+- Dzielimy program na składowe/zależności |
+- Określamy i opisujemy cel programu |
+- ...i piszemy kod zaczynając od końca :) |
+- Dostarczenie danych (początkowych obliczeń) potwierdza prawidłowe określenie końcowego rezultatu |
+---
